@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="10">
+ <editorsettings>
+  <export target="map2.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="medievalRTS_spritesheet@2" tilewidth="32" tileheight="32" tilecount="1156" columns="34">
+  <image source="../images/medievalRTS_spritesheet@2.png" width="1104" height="1100"/>
+  <tile id="680">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="681">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="682">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="683">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="696">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="697">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="698">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="699">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="714">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="715">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="716">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="717">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="730">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="731">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="732">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="733">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="748">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="749">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="750">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="751">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="764">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="765">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="766">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="767">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="782">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="783">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="784">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="785">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="798">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="799">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="800">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="801">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="816">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="817">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="818">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="819">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="850">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="851">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="852">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="853">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="884">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="885">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="886">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="887">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="918">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="919">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="920">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="921">
+   <properties>
+    <property name="collider" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="ground" width="20" height="20">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGAQAAxgEAAMcBAADGAQAAxgEAAMYBAADGAQAAxwEAAMYBAADGAQAAxgEAAMYBAADGAQAAxwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxgEAAMcBAADGAQAAxgEAAMcBAADGAQAA6AEAAOgBAADGAQAAxgEAAMcBAADoAQAA6AEAAMYBAADHAQAAAAAAAAAAAAAAAAAAAAAAAAAAAADoAQAAxgEAAIQBAACFAQAAhQEAAOgBAADGAQAAhAEAAIUBAACEAQAAhQEAAMcBAADHAQAAxwEAAMcBAAAAAAAAAAAAAAAAAAAAAAAAxgEAAMcBAADGAQAAhAEAAIUBAACnAQAAxgEAAIQBAACmAQAApwEAAIQBAACFAQAAxwEAAMcBAADpAQAAxgEAAMcBAAAAAAAAAAAAAAAAAADGAQAAxwEAAMYBAACEAQAAhQEAAKcBAACFAQAApgEAAKYBAACnAQAApgEAAIQBAACEAQAAhQEAAMcBAADGAQAAxwEAAAAAAAAAAAAAAAAAAOgBAADGAQAA6AEAAIQBAACFAQAApgEAAKcBAACEAQAAhQEAAMYBAADHAQAAhAEAAKYBAACnAQAAhQEAAMcBAADpAQAAAAAAAAAAAAAAAAAA6AEAAMYBAADHAQAApgEAAKcBAACFAQAAhAEAAIUBAACFAQAAhQEAAMcBAACmAQAApgEAAKcBAACnAQAAhAEAAIUBAACFAQAAAAAAAAAAAADGAQAAxwEAAMcBAACmAQAApwEAAIQBAACFAQAAAAAAAAAAAAAAAAAAxwEAAOkBAACmAQAApgEAAKcBAACEAQAAhQEAAKcBAAAAAAAAAAAAAMYBAADHAQAAhAEAAIUBAACFAQAAhQEAAKcBAAAAAAAAAAAAAAAAAACFAQAAhAEAAIQBAACmAQAApgEAAIQBAACEAQAAhQEAAAAAAAAAAAAAxgEAAIQBAACFAQAAhQEAAKcBAACnAQAApwEAAAAAAAAAAAAAAAAAAAAAAACFAQAApgEAAKYBAACnAQAAhAEAAIQBAACFAQAAAAAAAAAAAADGAQAAhAEAAIQBAACFAQAAxwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIUBAACnAQAApwEAAKcBAACEAQAAhAEAAIUBAAAAAAAAAAAAAMYBAACmAQAAhAEAAIQBAACFAQAAAAAAAAAAAACmAQAAAAAAAAAAAAAAAAAApwEAAIUBAACFAQAAhQEAAIQBAACEAQAAhQEAAAAAAAAAAAAAxgEAAMYBAACmAQAApgEAAKcBAADGAQAAxwEAAMcBAADGAQAAAAAAAKYBAACmAQAApwEAAKcBAACFAQAApgEAAIQBAACFAQAAAAAAAAAAAADGAQAAxwEAAMcBAADGAQAAxwEAAMcBAADpAQAA6QEAAMYBAADHAQAApgEAAKYBAACmAQAApwEAAKcBAACFAQAAhQEAAIUBAAAAAAAAAAAAAMYBAADHAQAA6QEAAMYBAADHAQAA6QEAAOkBAADGAQAAxwEAAMcBAACmAQAApwEAAKcBAACmAQAApgEAAKcBAACnAQAAhQEAAAAAAAAAAAAA6AEAAMYBAADHAQAA6AEAAOkBAADGAQAAxwEAAMcBAADHAQAAxwEAAMcBAADGAQAAxwEAAKYBAACnAQAAhQEAAIUBAACFAQAAAAAAAAAAAAAAAAAA6AEAAMYBAADGAQAA6AEAAMYBAADHAQAA6QEAAOkBAADGAQAAxwEAAMYBAADGAQAApgEAAKcBAACnAQAApwEAAKcBAAAAAAAAAAAAAAAAAAAAAAAA6AEAAOgBAADpAQAA6AEAAOkBAADoAQAA6QEAAOgBAADpAQAA6AEAAOgBAADpAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="objectbottom" width="20" height="20">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAzAIAAMwCAADMAgAAzAIAAMwCAADMAgAAzAIAAMwCAADMAgAAzAIAAMwCAADMAgAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQwIAAEQCAABFAgAARgIAAMwCAAAAAAAAAAAAAAAAAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlAgAAZgIAAGcCAABoAgAAzAIAAAAAAAAAAAAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIcCAACIAgAAiQIAAIoCAADMAgAAAAAAAAAAAADMAgAAAAAAAAAAAABDAgAARAIAAEUCAABGAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMAgAAAAAAAMwCAAAAAAAAAAAAAGUCAABmAgAAZwIAAGgCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwCAAAAAAAAzAIAAAAAAAAAAAAAhwIAAIgCAACJAgAAigIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzAIAAAAAAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEMCAABEAgAARQIAAEYCAAAAAAAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3QIAAN0CAADdAgAAAAAAAAAAAAAAAAAAZQIAAGYCAABnAgAAaAIAAAAAAADMAgAAzAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADdAgAA3QIAAN0CAAAAAAAAAAAAAAAAAACHAgAAiAIAAIkCAACKAgAAAAAAAMwCAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN0CAADdAgAA3QIAAN0CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN0CAADdAgAA3QIAAN0CAADdAgAA3QIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMAgAAzAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3QIAAN0CAAAAAAAA3QIAAN0CAADdAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwCAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3QIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMAgAAzAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwCAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEMCAABEAgAARQIAAEYCAAAAAAAAAAAAAAAAAAAAAAAAzAIAAAAAAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZQIAAGYCAABnAgAAaAIAAAAAAAAAAAAAAAAAAAAAAADMAgAAAAAAAAAAAADMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACHAgAAiAIAAIkCAACKAgAAzAIAAMwCAADMAgAAzAIAAAAAAAAAAAAAAAAAAAAAAADMAgAAzAIAAMwCAADMAgAAzAIAAMwCAADMAgAAzAIAAMwCAADMAgAAzAIAAMwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  </data>
+ </layer>
+ <objectgroup id="3" name="player">
+  <object id="1" name="spawnPlayer" type="spawnPlayer" x="304.216" y="155.005">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="enemy">
+  <object id="2" name="spawnEnemy" type="spawnEnemy" x="176.735" y="540.345">
+   <point/>
+  </object>
+  <object id="3" name="spawnEnemy" type="spawnEnemy" x="521.512" y="443.286">
+   <point/>
+  </object>
+  <object id="4" name="spawnEnemy" type="spawnEnemy" x="102.854" y="324.497">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="money">
+  <object id="5" name="money" type="money" x="301.318" y="559.177">
+   <point/>
+  </object>
+  <object id="7" name="money" type="money" x="482.399" y="207.156">
+   <point/>
+  </object>
+  <object id="8" name="money" type="money" x="124.584" y="123.135">
+   <point/>
+  </object>
+  <object id="9" name="money" type="money" x="560.626" y="534.55">
+   <point/>
+  </object>
+ </objectgroup>
+ <layer id="5" name="objectTop" width="20" height="20">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGQAAABoAAAAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7AAAAPAAAAD0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0AAABeAAAAXwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAGgAAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADsAAAA8AAAAPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQAAAF4AAABfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  </data>
+ </layer>
+</map>
