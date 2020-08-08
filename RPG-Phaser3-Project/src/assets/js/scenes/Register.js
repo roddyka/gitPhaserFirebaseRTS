@@ -8,9 +8,9 @@ import {
   update,
 } from "../lib/firebaseDB";
 
-export default class TileScene extends Phaser.Scene {
+export default class RegisterScene extends Phaser.Scene {
   constructor() {
-    super("Title");
+    super("Register");
   }
   init() {
     this.element;
@@ -21,55 +21,42 @@ export default class TileScene extends Phaser.Scene {
   create() {
     //start element login
 
-    // this.loginverification(this.scene);
+    this.loginverification(this.scene);
 
-    // this.element = this.add.dom(700 / 2, 700).createFromCache("login");
-    // this.element.setPerspective(700);
+    this.element = this.add.dom(700 / 2, 700).createFromCache("signup");
+    this.element.setPerspective(700);
 
-    // this.login(this.scene, this.element);
-    // //this.element.style.setBackgroundColor("#0000008a");
-    // //criate title text
-    // this.titleText = this.add.text(
-    //   this.element.width,
-    //   this.element.height / 2 + 15,
-    //   "NO TITLE RPG",
-    //   { fontSize: "64px", fill: "#fff" }
-    // );
-    // this.titleText.setOrigin(0.5);
-    // this.titleText.setDepth(1);
+    this.login(this.scene, this.element);
+    //this.element.style.setBackgroundColor("#0000008a");
+    //criate title text
+    this.titleText = this.add.text(
+      this.element.width,
+      this.element.height / 2 + 15,
+      "NO TITLE RPG",
+      { fontSize: "64px", fill: "#fff" }
+    );
+    this.titleText.setOrigin(0.5);
+    this.titleText.setDepth(1);
 
-    // this.erroLoginText = this.add.text(350, 550, "", {
-    //   fontSize: "64px",
-    //   fill: "#fff",
-    // });
-    // this.erroLoginText.setOrigin(0.5);
-    // this.erroLoginText.setDepth(1);
+    this.erroLoginText = this.add.text(350, 550, "", {
+      fontSize: "64px",
+      fill: "#fff",
+    });
+    this.erroLoginText.setOrigin(0.5);
+    this.erroLoginText.setDepth(1);
     //create buttons
-    this.LoginGameButton = new UiButton(
-      this,
-      350,
-      350,
-      "button1",
-      "button2",
-      "Login",
-      this.startScene.bind(this, "Login")
-    );
-    this.LoginGameButton.setDepth(1);
-    this.LoginGameButton.setScale(1.5);
+    // this.startGameButton = new UiButton(
+    //   this,
+    //   this.scale.width / 2,
+    //   this.scale.height * 0.65,
+    //   "button1",
+    //   "button2",
+    //   "Sign Up",
+    //   this.startScene.bind(this, "Game")
+    // );
+    // this.startGameButton.setDepth(1);
 
-    this.RegisterGameButton = new UiButton(
-      this,
-      350,
-      450,
-      "button1",
-      "button2",
-      "Register",
-      this.startScene.bind(this, "Register")
-    );
-    this.RegisterGameButton.setDepth(1);
-    this.RegisterGameButton.setScale(1.5);
-
-    //this.createBackground();
+    this.createBackground();
   }
 
   createBackground() {

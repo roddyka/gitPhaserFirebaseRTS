@@ -5,6 +5,9 @@ import TitleScene from "./assets/js/scenes/TitleScene";
 import GameScene from "./assets/js/scenes/GameScene";
 import UiScene from "./assets/js/scenes/UiScene";
 
+import LoginScene from "./assets/js/scenes/LoginScene";
+import RegisterScene from "./assets/js/scenes/Register";
+
 import Player from "./assets/js/classes/Player";
 import Chest from "./assets/js/classes/Chest";
 import UiButton from "./assets/js/classes/UiButton";
@@ -26,7 +29,7 @@ const config = {
   dom: {
     createContainer: true,
   },
-  scene: [BootScene, TitleScene, GameScene, UiScene],
+  scene: [BootScene, TitleScene, GameScene, UiScene, LoginScene, RegisterScene],
   physics: {
     default: "arcade",
     arcade: {

@@ -29,6 +29,10 @@ export default class UiScene extends Phaser.Scene {
     //create score text
     this.moneyText = this.add.text(40, 80, this.user.player.money);
     this.moneyText.setScrollFactor(0);
+
+    //create level text
+    this.levelText = this.add.text(40, 110, this.user.player.level);
+    this.levelText.setScrollFactor(0);
     //create a player
     this.playerpng = this.add.image(20, 20, "characters");
     this.playerpng.setScale(1);
@@ -36,6 +40,8 @@ export default class UiScene extends Phaser.Scene {
 
     this.playerName = this.add.text(40, 20, this.user.player.name);
     this.playerName.setScrollFactor(0);
+
+    this.levelIcon = this.add.sprite(20, 110, "items", 4);
 
     this.coinIcon = this.add
       .image(20, 80, "moneyPNG")

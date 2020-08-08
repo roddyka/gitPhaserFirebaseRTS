@@ -18,6 +18,7 @@ export default class BootScene extends Phaser.Scene {
 
   loadHtml() {
     this.load.html("login", "src/assets/html/login.html");
+    this.load.html("register", "src/assets/html/signup.html");
   }
 
   loadImages() {
