@@ -6,6 +6,7 @@ import {
   singUp,
   userInfo,
   update,
+  create,
 } from "../lib/firebaseDB";
 
 export default class RegisterScene extends Phaser.Scene {
@@ -20,10 +21,11 @@ export default class RegisterScene extends Phaser.Scene {
 
   create() {
     //start element login
+    //this.add.dom(100, 200).createFromHTML("<h1>teste</h1>");
 
     this.loginverification(this.scene);
 
-    this.element = this.add.dom(700 / 2, 700).createFromCache("signup");
+    this.element = this.add.dom(700 / 2, 700).createFromCache("register");
     this.element.setPerspective(700);
 
     this.login(this.scene, this.element);
@@ -45,16 +47,16 @@ export default class RegisterScene extends Phaser.Scene {
     this.erroLoginText.setOrigin(0.5);
     this.erroLoginText.setDepth(1);
     //create buttons
-    // this.startGameButton = new UiButton(
-    //   this,
-    //   this.scale.width / 2,
-    //   this.scale.height * 0.65,
-    //   "button1",
-    //   "button2",
-    //   "Sign Up",
-    //   this.startScene.bind(this, "Game")
-    // );
-    // this.startGameButton.setDepth(1);
+    this.startGameButton = new UiButton(
+      this,
+      this.scale.width / 2,
+      this.scale.height * 0.95,
+      "button1",
+      "button2",
+      "Back",
+      this.startScene.bind(this, "Title")
+    );
+    this.startGameButton.setDepth(1);
 
     this.createBackground();
   }
@@ -88,14 +90,41 @@ export default class RegisterScene extends Phaser.Scene {
   login(scene, element) {
     //start login
     document.getElementById("submit").onclick = async function () {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+
       var username = document.getElementById("username").value;
+      var sex = document.querySelector("input[name=sex]:checked").value;
       var password = document.getElementById("password").value;
-      if (username !== "" && password !== "") {
-        const logged = await singIn(username, password);
+
+      var skin = document.querySelector("input[name=skin]:checked").value;
+
+      console.log(sex);
+
+      if (
+        username !== "" &&
+        email !== "" &&
+        name !== "" &&
+        sex !== "" &&
+        password !== "" &&
+        skin !== ""
+      ) {
+        const logged = await singUp(email, password);
+
+        const createUser = await create(
+          logged,
+          email,
+          name,
+          0,
+          0,
+          username,
+          sex,
+          skin
+        );
         // preciso chamar a função para se logar
 
-        if (logged) {
-          console.log(logged);
+        if (createUser) {
+          console.log(createUser);
           localStorage.setItem("token", logged);
           //  Tween the login form out because are logged
           element.scene.tweens.add({

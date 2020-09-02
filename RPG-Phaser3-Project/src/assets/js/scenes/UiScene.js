@@ -17,6 +17,7 @@ export default class UiScene extends Phaser.Scene {
     console.log(this.user);
     //grab preferences to the game scene
     this.gameScene = this.scene.get("Game");
+    //this.enemyScene = this.scene.get("enemyPNG");
   }
 
   create() {
@@ -26,6 +27,7 @@ export default class UiScene extends Phaser.Scene {
   }
 
   setupUiElements() {
+    this.life = this.user.player.life;
     //create score text
     this.moneyText = this.add.text(40, 80, this.user.player.money);
     this.moneyText.setScrollFactor(0);
@@ -53,12 +55,12 @@ export default class UiScene extends Phaser.Scene {
       0: this.add
         .image(20, 50, "heartPNG")
         .setScale(0.3)
-        .setVisible(true)
+        .setVisible(false)
         .setScrollFactor(0),
       1: this.add
         .image(50, 50, "heartPNG")
         .setScale(0.3)
-        .setVisible(true)
+        .setVisible(false)
         .setScrollFactor(0),
       2: this.add
         .image(80, 50, "heartPNG")
@@ -66,6 +68,10 @@ export default class UiScene extends Phaser.Scene {
         .setVisible(false)
         .setScrollFactor(0),
     };
+
+    for (var i = 0; i < this.life; i++) {
+      this.fullHeart[i].setVisible(true);
+    }
 
     this.heartEmpty = {
       0: this.add
@@ -90,13 +96,22 @@ export default class UiScene extends Phaser.Scene {
     this.gameScene.events.on("updateScore", (score) => {
       this.showMoney(this, String(score));
     });
+
+    this.gameScene.events.on("hitEnemy", (life) => {
+      //console.log(life);
+      this.hitEnemy(this, life);
+    });
+
+    // this.enemyScene.events.on("distanceEnemy", (enemy) => {
+    //   //console.log(life);
+    //   Phaser.Math.Distance.BetweenPoints(this.player, enemy);
+    // });
   }
 
   showMoney(game, values) {
-    console.log(values);
     var i = 0;
     var distance = 20;
-    console.log(values.length);
+    console.log(values);
     this.moneyText.setText(values);
     // for (i == 0; i < values.length; i++) {
     //   distance += 30;
@@ -110,11 +125,18 @@ export default class UiScene extends Phaser.Scene {
   }
 
   //tomorrow! player less life when touch the enemy
-  hitEnemy() {
-    life--;
+  hitEnemy(game, life) {
+    //this.life--;
     //for (var i = life; i < life; i--) {
-    heart[life].setVisible(false);
+
+    this.fullHeart[life].setVisible(false);
     //}
+
+    if (life <= 0) {
+      this.scene.stop("Game");
+      this.scene.start("GameOver", { user: this.user });
+    }
+
     console.log(life);
   }
 

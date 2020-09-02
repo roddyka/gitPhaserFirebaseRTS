@@ -6,14 +6,15 @@ import GameScene from "./assets/js/scenes/GameScene";
 import UiScene from "./assets/js/scenes/UiScene";
 
 import LoginScene from "./assets/js/scenes/LoginScene";
-import RegisterScene from "./assets/js/scenes/Register";
-
+import RegisterScene from "./assets/js/scenes/RegisterScene";
+import GameLoadingScene from "./assets/js/scenes/GameLoadingScene";
 import Player from "./assets/js/classes/Player";
 import Chest from "./assets/js/classes/Chest";
 import UiButton from "./assets/js/classes/UiButton";
 //import goldSound from "./assets/audio/Pickup.wav";
 import "@babel/polyfill";
 import "firebase/auth";
+import GameOverScene from "./assets/js/scenes/GameOverScene";
 
 const config = {
   type: Phaser.AUTO,
@@ -29,7 +30,16 @@ const config = {
   dom: {
     createContainer: true,
   },
-  scene: [BootScene, TitleScene, GameScene, UiScene, LoginScene, RegisterScene],
+  scene: [
+    BootScene,
+    TitleScene,
+    GameScene,
+    UiScene,
+    LoginScene,
+    RegisterScene,
+    GameOverScene,
+    GameLoadingScene,
+  ],
   physics: {
     default: "arcade",
     arcade: {

@@ -18,33 +18,18 @@ export default class TileScene extends Phaser.Scene {
     this.loginHability = false;
   }
 
+  preload() {
+    //facebook
+    // this.load.image("foto", FBInstant.player.getPhoto());
+  }
+
   create() {
-    //start element login
+    //facebook
+    // this.add.text(350, 200, FBInstant.player.getName()).setOrigin(0.5);
 
-    // this.loginverification(this.scene);
+    // this.foto = this.add.image(350, 100, "foto");
+    // this.foto.setScale(0.5);
 
-    // this.element = this.add.dom(700 / 2, 700).createFromCache("login");
-    // this.element.setPerspective(700);
-
-    // this.login(this.scene, this.element);
-    // //this.element.style.setBackgroundColor("#0000008a");
-    // //criate title text
-    // this.titleText = this.add.text(
-    //   this.element.width,
-    //   this.element.height / 2 + 15,
-    //   "NO TITLE RPG",
-    //   { fontSize: "64px", fill: "#fff" }
-    // );
-    // this.titleText.setOrigin(0.5);
-    // this.titleText.setDepth(1);
-
-    // this.erroLoginText = this.add.text(350, 550, "", {
-    //   fontSize: "64px",
-    //   fill: "#fff",
-    // });
-    // this.erroLoginText.setOrigin(0.5);
-    // this.erroLoginText.setDepth(1);
-    //create buttons
     this.LoginGameButton = new UiButton(
       this,
       350,
@@ -69,7 +54,29 @@ export default class TileScene extends Phaser.Scene {
     this.RegisterGameButton.setDepth(1);
     this.RegisterGameButton.setScale(1.5);
 
-    //this.createBackground();
+    // var contextID = FBInstant.context.getID();
+    // console.log(contextID);
+
+    // var contextType = FBInstant.context.getType();
+    // console.log(contextType);
+    // FBInstant.getLeaderboardAsync("No title RPG." + FBInstant.context.getID())
+    //   .then((leaderboard) => leaderboard.getEntriesAsync(10, 0))
+    //   .then((entries) => {
+    //     for (var i = 0; i < entries.length; i++) {
+    //       console.log(
+    //         entries[i].getRank() +
+    //           ". " +
+    //           entries[i].getPlayer().getName() +
+    //           ": " +
+    //           entries[i].getScore()
+    //       );
+    //     }
+    //   })
+    //   .catch((error) => console.error(error));
+  }
+
+  addPlayerPhoto(key) {
+    this.add.image(400, 200, key);
   }
 
   createBackground() {

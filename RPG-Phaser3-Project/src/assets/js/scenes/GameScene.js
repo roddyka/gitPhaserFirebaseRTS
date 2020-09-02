@@ -13,20 +13,23 @@ export default class GameScene extends Phaser.Scene {
     this.score = this.user.player.money;
     this.map;
     this.tileset;
+    this.life = this.user.player.life;
+    this.invincible = false;
   }
 
   create() {
     this.createAudio();
 
-    this.createChest();
+    //this.createChest();
 
     this.createPlayer();
     this.createWalls();
     this.addCollisions();
 
     this.createInput();
-
     this.createBackgroundImage();
+
+    this.input.setDefaultCursor("url(src/assets/images/sword.png), pointer");
   }
 
   update() {
@@ -35,6 +38,16 @@ export default class GameScene extends Phaser.Scene {
 
   createAudio() {
     this.goldPickupAudio = this.sound.add("goldSound", {
+      loop: false,
+      volume: 1,
+    });
+
+    this.damage = this.sound.add("damage", {
+      loop: false,
+      volume: 1,
+    });
+
+    this.attack = this.sound.add("playerattack", {
       loop: false,
       volume: 1,
     });
@@ -86,29 +99,29 @@ export default class GameScene extends Phaser.Scene {
 
   addCollisions() {
     this.physics.add.collider(this.player, this.wall);
-    this.physics.add.overlap(
-      this.player,
-      this.chests,
-      this.collectChest,
-      null,
-      this
-    );
+    // this.physics.add.overlap(
+    //   this.player,
+    //   this.chests,
+    //   this.collectChest,
+    //   null,
+    //   this
+    // );
   }
 
-  collectChest(player, chest) {
-    this.goldPickupAudio.play();
-    //update our score
-    this.score += chest.coins;
-    //update score and UI
-    this.events.emit("updateScore", this.score);
-    //save score
-    console.log(this.score);
+  // collectChest(player, chest) {
+  //   this.goldPickupAudio.play();
+  //   //update our score
+  //   this.score += chest.coins;
+  //   //update score and UI
+  //   this.events.emit("updateScore", this.score);
+  //   //save score
+  //   console.log(this.score);
 
-    //destroy chest (make inactive)
-    chest.makeInactive(this.user, this.score);
-    //spawn a new chest
-    this.time.delayedCall(1000, this.spawnChest, [], this);
-  }
+  //   //destroy chest (make inactive)
+  //   chest.makeInactive(this.user, this.score);
+  //   //spawn a new chest
+  //   this.time.delayedCall(1000, this.spawnChest, [], this);
+  // }
 
   createBackgroundImage() {
     this.background = this.add.image(600, 600, "background");
@@ -149,7 +162,17 @@ export default class GameScene extends Phaser.Scene {
     //enemy
     //secound enemy the name now to object
     this.enemies = this.map.createFromObjects("enemy", "spawnEnemy", {});
-    this.enemiesGroup = new Enemies(this, this, [], this.enemies);
+    this.enemiesGroup = new Enemies(
+      this,
+      this,
+      [],
+      this.enemies,
+      this.player,
+      this.attack,
+      this.goldPickupAudio,
+      this.score,
+      this.user
+    );
 
     this.physics.add.collider(
       this.enemiesGroup,
@@ -159,6 +182,7 @@ export default class GameScene extends Phaser.Scene {
       null,
       this
     );
+
     //enemy collider object
     this.physics.add.collider(this.enemiesGroup, this.objectBottom);
   }
@@ -173,5 +197,22 @@ export default class GameScene extends Phaser.Scene {
       this.map.widthInPixels,
       this.map.heightInPixels
     );
+  }
+
+  hitEnemy() {
+    if (!this.invincible) {
+      this.damage.play();
+      this.invincible = true;
+      this.events.emit("hitEnemy", --this.life);
+
+      this.time.delayedCall(
+        2000,
+        () => {
+          this.invincible = false;
+        },
+        null,
+        this
+      );
+    }
   }
 }

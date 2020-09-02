@@ -45,6 +45,8 @@ export default class BootScene extends Phaser.Scene {
     this.load.image("hud9", "src/assets/images/ui/numbers/hud9.png");
 
     this.load.image("tiles", "src/assets/images/medievalRTS_spritesheet@2.png");
+
+    this.load.image("foto", FBInstant.player.getPhoto());
   }
 
   loadTiledMap() {
@@ -64,10 +66,28 @@ export default class BootScene extends Phaser.Scene {
 
   loadAudio() {
     this.load.audio("goldSound", ["src/assets/audio/Pickup.wav"]);
+    this.load.audio("damage", ["src/assets/audio/PlayerDamage.wav"]);
+    this.load.audio("playerattack", ["src/assets/audio/PlayerAttack.wav"]);
   }
 
   create() {
-    this.scene.start("Title");
+    let scene = this.scene;
+    scene.start("Login");
+
+    //facebook
+    // FBInstant.initializeAsync()
+    //   .then(function () {
+    //     FBInstant.setLoadingProgress(100);
+    //     FBInstant.startGameAsync().then(function () {
+    //       console.log("carregando");
+    //       scene.start("Title");
+    //     });
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error.message);
+    //     console.log("not a facebook instant game");
+    //     scene.start("Title");
+    //   });
     //start my tileset maps and object so collider
   }
 }

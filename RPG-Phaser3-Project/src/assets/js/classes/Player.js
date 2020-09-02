@@ -36,5 +36,8 @@ export default class Player extends Phaser.Physics.Arcade.Image {
     } else if (cursors.down.isDown) {
       this.body.setVelocityY(this.velocity);
     }
+
+    if (cursors.space.isDown) {
+    }
   }
 }

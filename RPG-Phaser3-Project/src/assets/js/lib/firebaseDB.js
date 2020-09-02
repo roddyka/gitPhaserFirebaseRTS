@@ -19,7 +19,21 @@ async function singIn(email, password) {
     });
 }
 
-function singUp() {}
+async function singUp(email, password) {
+  console.log(email);
+  return Firebase.auth()
+    .createUserWithEmailAndPassword(email, password)
+    .then(function (result) {
+      return result.user.uid;
+    })
+    .catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorMessage);
+      return false;
+    });
+}
 
 function singInUser() {
   //   return Firebase.auth().onAuthStateChanged(function (user) {
@@ -60,7 +74,17 @@ async function userInfo(id) {
     });
 }
 
-async function update(id, email, name, money, level, character, sex, skin) {
+async function update(
+  id,
+  email,
+  name,
+  money,
+  level,
+  character,
+  sex,
+  skin,
+  life
+) {
   var userId = id;
   var info = {
     email: email,
@@ -71,6 +95,7 @@ async function update(id, email, name, money, level, character, sex, skin) {
       name: character,
       sex: sex,
       skin: skin,
+      life: life,
     },
   };
 
@@ -83,4 +108,31 @@ async function update(id, email, name, money, level, character, sex, skin) {
     });
 }
 
-export { singIn, singUp, singInUser, userInfo, update };
+async function create(id, email, name, money, level, character, sex, skin) {
+  var userId = id;
+  console.log(id);
+  var info = {
+    email: email,
+    name: name,
+    player: {
+      level: level,
+      money: money,
+      name: character,
+      sex: sex,
+      skin: skin,
+      life: 3,
+    },
+  };
+
+  return Firebase.database()
+    .ref("users/" + userId)
+    .set(info)
+    .then(function () {
+      return true;
+    })
+    .catch(function (error) {
+      console.log("Error: " + error);
+    });
+}
+
+export { singIn, singUp, singInUser, userInfo, update, create };

@@ -30,7 +30,7 @@ export default class UiButton extends Phaser.GameObjects.Container {
     this.add(this.button);
     this.add(this.buttonText);
 
-    this.button.on("pointerdown", () => {
+    this.button.on("pointerdown", async () => {
       console.log("pointer down");
       this.targetCallback();
     });

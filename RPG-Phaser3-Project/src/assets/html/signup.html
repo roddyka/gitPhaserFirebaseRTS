@@ -1,9 +1,12 @@
 <style>
+  body > div {
+    background: #000000a6;
+  }
   .login {
-    background: #eceeee;
+    background: white;
     border: 1px solid #42464b;
     border-radius: 6px;
-    height: 257px;
+    height: 100%;
     margin: 20px auto 0;
     width: 298px;
   }
@@ -108,6 +111,14 @@
       0px 10px 5px #999;
   }
 
+  input[type="radio"] {
+  }
+
+  #signup {
+    margin: 13;
+    background-color: red;
+  }
+
   .shadow {
     background: #000;
     border-radius: 12px 12px 4px 4px;
@@ -126,8 +137,34 @@
 </style>
 
 <div class="login">
+  <input type="text" placeholder="name" id="name" name="name" />
+  <input type="text" placeholder="email" id="email" name="email" />
+  <hr />
+
   <input type="text" placeholder="Username" id="username" name="username" />
+
+  <div>
+    <p>Sex</p>
+    <label for="sex">M</label>
+    <input type="radio" placeholder="sex" name="sex" value="M" />
+    <label for="sex">F</label>
+    <input type="radio" placeholder="sex" name="sex" value="F" />
+  </div>
+
+  <div>
+    <p>Character</p>
+    <label for="sex">Mage</label>
+    <input type="radio" placeholder="sex" name="skin" value="Mage" />
+    <label for="sex">Warrior</label>
+    <input type="radio" placeholder="sex" name="skin" value="Warrior" />
+    <label for="sex">Saint</label>
+    <input type="radio" placeholder="sex" name="skin" value="Saint" />
+  </div>
   <input type="password" placeholder="password" id="password" name="password" />
+
+  <!-- <a href="#" class="forgot">forgot password?</a> -->
   <input type="submit" value="Sign In" name="loginButton" id="submit" />
+  <!-- <input type="submit" value="Sign up" name="signupButton" id="signup" /> -->
+  <p id="errorLogin"></p>
 </div>
 <div class="shadow"></div>

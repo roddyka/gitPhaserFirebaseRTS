@@ -36,7 +36,23 @@ export default class Chest extends Phaser.Physics.Arcade.Image {
       user.player.level,
       user.player.name,
       user.player.sex,
-      user.player.skin
+      user.player.skin,
+      user.player.life
     );
+
+    // FBInstant.getLeaderboardAsync("No title RPG." + contextID)
+    //   .then((leaderboard) => {
+    //     console.log(leaderboard.getName());
+    //     return leaderboard.setScoreAsync(
+    //       score,
+    //       '{race: "' +
+    //         user.player.skin +
+    //         '", level: "' +
+    //         user.player.level +
+    //         '"}'
+    //     );
+    //   })
+    //   .then(() => console.log("Score saved"))
+    //   .catch((error) => console.error(error));
   }
 }

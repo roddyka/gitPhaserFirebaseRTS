@@ -52,8 +52,8 @@
                  "type":"spawnPlayer",
                  "visible":true,
                  "width":0,
-                 "x":304.215558452847,
-                 "y":155.005070259308
+                 "x":304.216,
+                 "y":155.005
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -75,8 +75,8 @@
                  "type":"spawnEnemy",
                  "visible":true,
                  "width":0,
-                 "x":176.734753005939,
-                 "y":540.344777632913
+                 "x":176.735,
+                 "y":540.345
                 }, 
                 {
                  "height":0,
@@ -87,8 +87,8 @@
                  "type":"spawnEnemy",
                  "visible":true,
                  "width":0,
-                 "x":521.512385919166,
-                 "y":443.285528031291
+                 "x":521.512,
+                 "y":443.286
                 }, 
                 {
                  "height":0,
@@ -99,8 +99,116 @@
                  "type":"spawnEnemy",
                  "visible":true,
                  "width":0,
-                 "x":102.853831667391,
-                 "y":324.496595683036
+                 "x":102.854,
+                 "y":324.497
+                }, 
+                {
+                 "height":0,
+                 "id":10,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":395.463797615586,
+                 "y":487.583599883687
+                }, 
+                {
+                 "height":0,
+                 "id":11,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":417.795870892701,
+                 "y":333.120093050305
+                }, 
+                {
+                 "height":0,
+                 "id":12,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":485.722593777261,
+                 "y":85.6062808956092
+                }, 
+                {
+                 "height":0,
+                 "id":13,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":159.116022099447,
+                 "y":192.614132015121
+                }, 
+                {
+                 "height":0,
+                 "id":14,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":208.432683919744,
+                 "y":61.4132015120675
+                }, 
+                {
+                 "height":0,
+                 "id":15,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":444.780459435883,
+                 "y":588.077929630707
+                }, 
+                {
+                 "height":0,
+                 "id":16,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":559.232334981099,
+                 "y":313.579528932829
+                }, 
+                {
+                 "height":0,
+                 "id":17,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":215.876708345449,
+                 "y":276.359406804304
+                }, 
+                {
+                 "height":0,
+                 "id":18,
+                 "name":"spawnEnemy",
+                 "point":true,
+                 "rotation":0,
+                 "type":"spawnEnemy",
+                 "visible":true,
+                 "width":0,
+                 "x":144.227973248037,
+                 "y":413.143355626636
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -122,8 +230,8 @@
                  "type":"money",
                  "visible":true,
                  "width":0,
-                 "x":301.318267419962,
-                 "y":559.177169346661
+                 "x":301.318,
+                 "y":559.177
                 }, 
                 {
                  "height":0,
@@ -134,8 +242,8 @@
                  "type":"money",
                  "visible":true,
                  "width":0,
-                 "x":482.398956975228,
-                 "y":207.156308851224
+                 "x":482.399,
+                 "y":207.156
                 }, 
                 {
                  "height":0,
@@ -146,8 +254,8 @@
                  "type":"money",
                  "visible":true,
                  "width":0,
-                 "x":124.583514414023,
-                 "y":123.134868897581
+                 "x":124.584,
+                 "y":123.135
                 }, 
                 {
                  "height":0,
@@ -158,8 +266,8 @@
                  "type":"money",
                  "visible":true,
                  "width":0,
-                 "x":560.625814863103,
-                 "y":534.550195567145
+                 "x":560.626,
+                 "y":534.55
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -182,7 +290,7 @@
          "y":0
         }],
  "nextlayerid":7,
- "nextobjectid":10,
+ "nextobjectid":19,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.3.3",
