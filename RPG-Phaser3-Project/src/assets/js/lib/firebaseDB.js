@@ -74,6 +74,10 @@ async function userInfo(id) {
     });
 }
 
+async function users() {
+  return Firebase.database().ref("users").limitToLast(100);
+}
+
 async function update(
   id,
   email,
@@ -135,4 +139,4 @@ async function create(id, email, name, money, level, character, sex, skin) {
     });
 }
 
-export { singIn, singUp, singInUser, userInfo, update, create };
+export { singIn, singUp, singInUser, userInfo, update, create, users };

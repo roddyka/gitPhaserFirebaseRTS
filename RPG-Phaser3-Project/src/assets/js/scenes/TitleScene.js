@@ -54,6 +54,18 @@ export default class TileScene extends Phaser.Scene {
     this.RegisterGameButton.setDepth(1);
     this.RegisterGameButton.setScale(1.5);
 
+    this.LeaderboardGameButton = new UiButton(
+      this,
+      350,
+      150,
+      "button1",
+      "button2",
+      "Leaderboard",
+      this.startScene.bind(this, "Leaderboard")
+    );
+    this.LeaderboardGameButton.setDepth(1);
+    this.LeaderboardGameButton.setScale(1.5);
+
     // var contextID = FBInstant.context.getID();
     // console.log(contextID);
 

@@ -11,10 +11,12 @@ import GameLoadingScene from "./assets/js/scenes/GameLoadingScene";
 import Player from "./assets/js/classes/Player";
 import Chest from "./assets/js/classes/Chest";
 import UiButton from "./assets/js/classes/UiButton";
+
 //import goldSound from "./assets/audio/Pickup.wav";
 import "@babel/polyfill";
 import "firebase/auth";
 import GameOverScene from "./assets/js/scenes/GameOverScene";
+import LeaderboardScene from "./assets/js/scenes/leaderboard";
 
 const config = {
   type: Phaser.AUTO,
@@ -39,6 +41,7 @@ const config = {
     RegisterScene,
     GameOverScene,
     GameLoadingScene,
+    LeaderboardScene,
   ],
   physics: {
     default: "arcade",

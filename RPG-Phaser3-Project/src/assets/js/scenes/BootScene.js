@@ -72,7 +72,7 @@ export default class BootScene extends Phaser.Scene {
 
   create() {
     let scene = this.scene;
-    scene.start("Login");
+    scene.start("Leaderboard");
 
     //facebook
     // FBInstant.initializeAsync()

@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "rodrigoka4@gmail.com",
+      "name": "Rodrigo",
+      "player": {
+        "level": 13,
+        "life": 3,
+        "money": 0,
+        "name": "roddyka",
+        "sex": "F",
+        "skin": "saint"
+      }
+    },
+    {
+      "email": "rodrigoka4@gmail.com",
+      "name": "Seila",
+      "player": {
+        "level": 13,
+        "life": 3,
+        "money": 300,
+        "name": "ManoDoCeu",
+        "sex": "F",
+        "skin": "saint"
+      }
+    },
+    {
+      "email": "rodrigoka4@gmail.com",
+      "name": "Teste",
+      "player": {
+        "level": 13,
+        "life": 3,
+        "money": 500,
+        "name": "Seil002",
+        "sex": "F",
+        "skin": "saint"
+      }
+    }
+  ]
+}
